@@ -1,0 +1,47 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "PhishSense app",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "phishsense",
+      "cwd": "${workspaceFolder}",
+      "justMyCode": true
+    },
+    {
+      "name": "Seed database / create admin",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "phishsense.data.seed",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Train models (print metrics)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "phishsense.services.ml",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Add 24 sample users",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "phishsense.services.sample_data",
+      "args": ["--users", "24"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Remove sample users",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "phishsense.services.sample_data",
+      "args": ["--remove"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    }
+  ]
+}

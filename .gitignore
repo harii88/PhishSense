@@ -1,0 +1,10 @@
+# Virtual environment
+.venv/
+
+# Generated data: database, trained models, exported reports
+instance/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
