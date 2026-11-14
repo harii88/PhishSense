@@ -87,7 +87,7 @@ This creates the database in `instance\phishsense.db`, loads the training conten
 .venv\Scripts\python.exe -m phishsense
 ```
 
-Or in VS Code: *Run and Debug* (`Ctrl+Shift+D`) → choose **PhishSense app** → ▶.
+Or double-click **`Start PhishSense.bat`** in the project folder (after setup steps 3–4), or in VS Code: *Run and Debug* (`Ctrl+Shift+D`) → choose **PhishSense app** → ▶.
 
 **c) Trainees register themselves** on the *Create account* tab of the sign-in window. Admins sign in with `admin` and the password from step a.
 
